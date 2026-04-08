@@ -193,7 +193,7 @@ body.hovering .footer{opacity:0}
 // ─────────────────────────────────────────────
 
 const ITEMS=[
-  {id:1,  title:'Nujabes — Modal Soul',         desc:'I bought this vinyl at a record store in Osaka on a rainy afternoon. The shopkeeper wrapped it carefully in tissue paper without saying a word. I don\'t have a record player yet, but I keep it on my shelf where I can see the cover every morning.', img:'images/modal-soul.jpg'},
+  {id:1,  title:'Nujabes — Modal Soul',         desc:'I bought this vinyl at a record store in Osaka on a rainy afternoon. The shopkeeper wrapped it carefully in tissue paper without saying a word. I don\'t have a record player yet, but I keep it on my shelf where I can see the cover every morning.', img:'images/IMG_4485.jpg'},
   {id:2,  title:'Kissa by Kissa',                desc:'A book about walking through Japan and stopping at kissaten along the way. Every page smells like coffee and wood. Craig Mod wrote it and carried it across mountains. I carried it across airports.', img:'images/kissa-by-kissa.jpg'},
   {id:3,  title:'Nikon TW4',                     desc:'My grandfather\'s camera. The lens mechanism still works perfectly after all these decades. It\'s heavier than it looks, and every time I pick it up I think about all the photos it took before it found me.', img:'images/nikon-tw4.jpg'},
   {id:4,  title:'Midori MD Notebook',             desc:'The paper in this notebook feels like it was made for slow thoughts. I keep one in every bag I own, just in case a thought needs somewhere to land. The cream pages yellow beautifully over time.', img:'images/modal-soul.jpg'},
@@ -228,6 +228,7 @@ const hoverDesc=document.getElementById('hoverDesc');
 
 let hoverTimer=null,currentHovered=null;
 
+ITEMS.sort(() => Math.random() - 0.5);
 function renderItems(){
   grid.innerHTML='';
   ITEMS.forEach((item,i)=>{
