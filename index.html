@@ -118,10 +118,11 @@ body.hovering .item.hovered{opacity:1 !important}
   pointer-events:none;
   opacity:0;
   transition:opacity .5s ease .1s;
+  width:80vw;
 }
 .hover-info.active{opacity:1}
 .hover-info-title{
-  font-size:clamp(14px,1.3vw,16px);
+  font-size:clamp(14px,1.5vw,20px);
   color:#ffffff;
   -webkit-text-stroke:0.3px #5c5b5b);
   margin-bottom:12px;
@@ -131,11 +132,11 @@ body.hovering .item.hovered{opacity:1 !important}
 }
 .hover-info.active .hover-info-title{transform:translateY(0);opacity:.55}
 .hover-info-desc{
-  font-size:clamp(18px,3vw,42px);
+  font-size:clamp(16px,2.8vw,40px);
   line-height:1.4;
   color:#ffffff;
   -webkit-text-stroke:0.45px #5c5b5b;
-  max-width:900px;
+  max-width:80%;
   transform:translateY(12px);
   opacity:0;
   transition:transform .5s ease .2s, opacity .5s ease .2s;
